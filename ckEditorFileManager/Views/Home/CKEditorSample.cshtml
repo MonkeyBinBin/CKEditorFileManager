@@ -1,0 +1,26 @@
+﻿<div class="page-header">
+    <h1>CKEditor範例<small>使用Plugin時結合檔案管理頁面進行設定與檔案的管理(功能類似CKFinder)</small></h1>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="editor">
+            <h1>Hello world!</h1>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    @Scripts.Render("~/bundles/scripts/ckeditor")
+    <script type="text/javascript">
+        $(function () {
+            CKEDITOR.config.height = 400;
+            CKEDITOR.config.width = 'auto';
+            
+            CKEDITOR.replace('editor', {
+                filebrowserImageBrowseUrl: "@Url.Action("CKEditorImageFileManager", "Home")",
+                filebrowserVideoBrowseUrl: "@Url.Action("CKEditorVideoFileManager", "Home")",
+                extraPlugins: "html5video"
+            });
+        });
+    </script>
+}
