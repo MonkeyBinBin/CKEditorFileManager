@@ -9,4 +9,5 @@ bootstrap-fileinput 4.3.4 => 檔案上傳套件
 jQuery Unveil => lazy load images
 
 參考 [HTML5 Video plugin for CKEditor](https://alfonsoml.blogspot.tw/2011/01/html5-video-plugin-for-ckeditor.html)
-修改後Video套件：[HTML5 Video](https://github.com/MonkeyBinBin/CKEditorFileManager/tree/master/ckEditorFileManager/Scripts/ckeditor/plugins/html5video)
+
+修改後Video套件 [HTML5 Video](https://github.com/MonkeyBinBin/CKEditorFileManager/tree/master/ckEditorFileManager/Scripts/ckeditor/plugins/html5video)
