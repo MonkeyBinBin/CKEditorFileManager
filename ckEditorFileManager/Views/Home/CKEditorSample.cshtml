@@ -17,9 +17,9 @@
             CKEDITOR.config.width = 'auto';
             
             CKEDITOR.replace('editor', {
+                filebrowserUploadUrl: "@Url.Action("CKEditorImageFileManager", "Home")",
                 filebrowserImageBrowseUrl: "@Url.Action("CKEditorImageFileManager", "Home")",
-                filebrowserVideoBrowseUrl: "@Url.Action("CKEditorVideoFileManager", "Home")",
-                extraPlugins: "html5video"
+                filebrowserVideoBrowseUrl: "@Url.Action("CKEditorVideoFileManager", "Home")"                
             });
         });
     </script>
